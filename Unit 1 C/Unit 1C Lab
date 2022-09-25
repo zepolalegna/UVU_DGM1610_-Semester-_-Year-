@@ -1,0 +1,13 @@
+using System;
+					
+public class Program
+{
+	public void Main()
+	{
+		string[] guitarTypes = {"Gibson" , "Fender" , "Ibanez" , "Yamaha"};
+		Console.WriteLine(guitarTypes.Length);
+		foreach(var guitar in guitarTypes) {
+			Console.WriteLine("My guitar is a " + guitar + ".");
+		}
+	}
+}
