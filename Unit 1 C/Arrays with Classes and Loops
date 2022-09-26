@@ -4,7 +4,7 @@ public class Program
 {
 	public void Main()
 	{
-		weapon[] weaponsObjs = {new weapon(), new weapon(), new weapon()};
+	weapon[] weaponsObjs = {new weapon(), new weapon(), new weapon()};
 		weaponsObjs[1].weaponName = "Sword";
 		weaponsObjs[2].weaponName = "Hammer";
 		for(var i = 0; i < weaponsObjs.Length; i++) {
@@ -18,3 +18,8 @@ public class Program
 			
 		}
 	}
+ }
+public class weapon {
+	public string weaponName = "Axe";
+    public int powerLevel = 1;
+}
