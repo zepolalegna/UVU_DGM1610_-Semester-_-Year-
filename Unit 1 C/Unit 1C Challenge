@@ -1,0 +1,23 @@
+using System;
+					
+public class Program
+{
+	public void Main()
+	{
+		genre[] musicGenre = {new genre(), new genre(), new genre()};
+			musicGenre[1].genreName = "Rock";
+			musicGenre[2].genreName = "R&B";
+		for(var i = 0; musicGenre.Length; i++) {
+			musicGenre[i].rating = 10;
+		}
+		foreach(var song in musicGenre) {
+			Console.WriteLine(song.genreName);
+			Console.WriteLine(song.rating);
+		}
+		
+	}
+}
+public class genre {
+	public string genreName = "Indie";
+	public int rating = 10;
+}
